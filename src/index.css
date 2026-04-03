@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-mcd-red: #DA291C;
+  --color-mcd-yellow: #FFC72C;
+  --color-mcd-black: #27251F;
+  --color-mcd-gray: #F1F1F1;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-mcd-black font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold tracking-tight;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-mcd-red text-white px-8 py-4 rounded-full font-bold text-lg transition-all hover:opacity-90 active:scale-95 shadow-lg hover:shadow-xl inline-flex items-center justify-center;
+  }
+  
+  .btn-secondary {
+    @apply bg-mcd-yellow text-mcd-black px-8 py-4 rounded-full font-bold text-lg transition-all hover:opacity-90 active:scale-95 shadow-md hover:shadow-lg inline-flex items-center justify-center;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-mcd-red text-mcd-red px-8 py-4 rounded-full font-bold text-lg transition-all hover:bg-mcd-red hover:text-white active:scale-95 inline-flex items-center justify-center;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 px-4 md:px-8 max-w-7xl mx-auto;
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "McDonald's - Your Favorites, Faster",
+  "description": "A high-converting, modern web experience for McDonald's focusing on speed, convenience, and delicious favorites.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
